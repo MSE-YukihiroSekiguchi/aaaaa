@@ -16,8 +16,9 @@ jobs:
     # マスクテスト
     - name: test
       run: |
-        # echo "Hello!""${{ github.event.inputs.name }}"
         echo "::add-mask::${{ github.event.inputs.name }}"
-        # cd /home/ubuntu/work/sekiguchi
         echo "Access ""${{ github.event.inputs.name }}"
-        curl ${{ github.event.inputs.name }}
+        # 入力値を参照
+        # curl ${{ github.event.inputs.name }}
+        # シークレット情報を参照
+        curl ${{secrets.SECRET_URL}}
