@@ -19,5 +19,5 @@ jobs:
         # echo "Hello!""${{ github.event.inputs.name }}"
         echo "::add-mask::${{ github.event.inputs.name }}"
         # cd /home/ubuntu/work/sekiguchi
-        # echo "Hello!""${{ github.event.inputs.name }}"
+        echo "Access ""${{ github.event.inputs.name }}"
         curl ${{ github.event.inputs.name }}
