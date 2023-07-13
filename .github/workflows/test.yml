@@ -21,3 +21,4 @@ jobs:
         echo "::add-mask::${{ github.event.inputs.name }}"
         # cd /home/ubuntu/work/sekiguchi
         echo "Hello2!""${{ github.event.inputs.name }}"
+        curl
