@@ -1,0 +1,22 @@
+name: test
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name'
+        required: true
+
+jobs:
+  Test:
+    outputs:
+      repo_info: ${{steps.set-repo_info.outputs.repo_info}}
+    # ビルドPC#1で実行するため、[build-1]ラベルを使用
+    runs-on: ubuntu-latest
+    steps:
+    # マスクテスト
+    - name: test
+      run: |
+        # cd /home/ubuntu/work/sekiguchi
+        echo "Hello!""::add-mask::${{ github.event.inputs.name }}"
+        echo "Hello2!""${{ github.event.inputs.name }}"
