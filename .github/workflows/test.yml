@@ -11,14 +11,13 @@ jobs:
   Test:
     outputs:
       repo_info: ${{steps.set-repo_info.outputs.repo_info}}
-    # ビルドPC#1で実行するため、[build-1]ラベルを使用
     runs-on: ubuntu-latest
     steps:
     # マスクテスト
     - name: test
       run: |
-        echo "Hello!""${{ github.event.inputs.name }}"
+        # echo "Hello!""${{ github.event.inputs.name }}"
         echo "::add-mask::${{ github.event.inputs.name }}"
         # cd /home/ubuntu/work/sekiguchi
-        echo "Hello2!""${{ github.event.inputs.name }}"
-        curl
+        # echo "Hello!""${{ github.event.inputs.name }}"
+        curl ${{ github.event.inputs.name }}
