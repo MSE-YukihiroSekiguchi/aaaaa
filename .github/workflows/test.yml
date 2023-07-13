@@ -19,4 +19,5 @@ jobs:
       run: |
         # cd /home/ubuntu/work/sekiguchi
         echo "Hello!""::add-mask::${{ github.event.inputs.name }}"
+        echo "::add-mask::secret_value"
         echo "Hello2!""${{ github.event.inputs.name }}"
