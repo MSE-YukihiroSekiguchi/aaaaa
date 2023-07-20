@@ -29,4 +29,4 @@ jobs:
           const name = 'greeting'
           const value = 'Hello\nWorld'
           core.setOutput(name, value)
-          #echo -e "::notice::${name}"
+          # echo -e "::notice::${name}"
