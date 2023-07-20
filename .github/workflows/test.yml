@@ -22,6 +22,9 @@ jobs:
         # curl ${{ github.event.inputs.name }}
         # シークレット情報を参照
         # curl ${{secrets.SECRET_URL}}
-        echo -e "::notice file=app.js,line=1,col=5,endColumn=7::Missing semicolon\naaaaa"
-        
-        echo -e "abcde\nfghij"
+        echo "::notice::""INPUT INFO:"
+        echo "::notice::""  PROJECT:XXXXX"
+        echo "::notice::""  COLLECTION:XXXXX"
+        echo "::notice::""　REPOSITORY(BRANCH OR TAG):XXXXX"
+        echo "::notice::""SEARCH RESULT:"
+        echo "::notice::""  JIRA TICKET NO DATA"
