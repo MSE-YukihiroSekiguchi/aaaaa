@@ -22,11 +22,5 @@ jobs:
         # curl ${{ github.event.inputs.name }}
         # シークレット情報を参照
         # curl ${{secrets.SECRET_URL}}
+        echo "::notice file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
         
-    - uses: actions/github-script@v6
-      with:
-        script: |
-          const name = 'greeting'
-          const value = 'Hello\nWorld'
-          core.setOutput(name, value)
-          # echo -e "::notice::${name}"
