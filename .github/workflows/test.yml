@@ -21,4 +21,5 @@ jobs:
         # 入力値を参照
         # curl ${{ github.event.inputs.name }}
         # シークレット情報を参照
-        curl ${{secrets.SECRET_URL}}
+        # curl ${{secrets.SECRET_URL}}
+        echo -e "::notice::aaaaaa\n""bbbbb\n""ccccc"
