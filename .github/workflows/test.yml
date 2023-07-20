@@ -25,6 +25,6 @@ jobs:
         echo "::notice::""INPUT INFO:"
         echo "::notice::""  PROJECT:XXXXX"
         echo "::notice::""  COLLECTION:XXXXX"
-        echo "::notice::""　REPOSITORY(BRANCH OR TAG):XXXXX"
+        echo "::notice::""  REPOSITORY(BRANCH OR TAG):XXXXX"
         echo "::notice::""SEARCH RESULT:"
         echo "::notice::""  JIRA TICKET NO DATA"
