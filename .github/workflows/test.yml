@@ -23,3 +23,10 @@ jobs:
         # シークレット情報を参照
         # curl ${{secrets.SECRET_URL}}
         echo -e "::notice::aaaaaa\nbbbbb\nccccc"
+        
+    - uses: actions/github-script@v6
+      with:
+        script: |
+          const name = 'greeting'
+          const value = 'Hello\nWorld'
+          echo -e "::notice::core.setOutput(name, value)"
