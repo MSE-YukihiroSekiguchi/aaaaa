@@ -25,8 +25,7 @@ jobs:
         
         # サマリ出力
         echo "# Result:" >> $GITHUB_STEP_SUMMARY
-        echo "**JIRA ticket search success.**"
-        echo "| Items  | Info |" >> $GITHUB_STEP_SUMMARY
+        echo "**JIRA ticket search success.**" >> $GITHUB_STEP_SUMMARY
         
         echo "# INPUT INFO:" >> $GITHUB_STEP_SUMMARY
         echo "| Items  | Info |" >> $GITHUB_STEP_SUMMARY
