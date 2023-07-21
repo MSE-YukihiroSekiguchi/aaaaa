@@ -16,7 +16,7 @@ jobs:
     # マスクテスト
     - name: test
       run: |
-        echo "::add-mask::${{ github.event.inputs.name }}"
+        # echo "::add-mask::${{ github.event.inputs.name }}"
         echo "Access ""${{ github.event.inputs.name }}"
         # 入力値を参照
         # curl ${{ github.event.inputs.name }}
@@ -29,4 +29,5 @@ jobs:
         # echo "::notice::""SEARCH RESULT:"
         # echo "::notice::""  JIRA TICKET NO DATA"
         echo "aaaaa" >> $GITHUB_STEP_SUMMARY
-        
+        echo "bbbbb" >> $GITHUB_STEP_SUMMARY
+        echo ${{ github.event.inputs.name }}  >> $GITHUB_STEP_SUMMARY
