@@ -22,12 +22,11 @@ jobs:
         # curl ${{ github.event.inputs.name }}
         # シークレット情報を参照
         # curl ${{secrets.SECRET_URL}}
-        # echo "::notice::""INPUT INFO:"
-        # echo "::notice::""  PROJECT:XXXXX"
-        # echo "::notice::""  COLLECTION:XXXXX"
-        # echo "::notice::""  REPOSITORY(BRANCH OR TAG):XXXXX"
-        # echo "::notice::""SEARCH RESULT:"
-        # echo "::notice::""  JIRA TICKET NO DATA"
-        echo "aaaaa" >> $GITHUB_STEP_SUMMARY
-        echo "bbbbb" >> $GITHUB_STEP_SUMMARY
-        echo ${{ github.event.inputs.name }}  >> $GITHUB_STEP_SUMMARY
+        
+        # サマリ出力
+        echo "INPUT INFO:" >> $GITHUB_STEP_SUMMARY
+        echo "  PROJECT:XXXXX" >> $GITHUB_STEP_SUMMARY
+        echo "  COLLECTION:XXXXX" >> $GITHUB_STEP_SUMMARY
+        echo "  REPOSITORY(BRANCH OR TAG):XXXXX" >> $GITHUB_STEP_SUMMARY
+        echo "SEARCH RESULT:"  >> $GITHUB_STEP_SUMMARY
+        echo "  JIRA TICKET NO DATA" >> $GITHUB_STEP_SUMMARY
