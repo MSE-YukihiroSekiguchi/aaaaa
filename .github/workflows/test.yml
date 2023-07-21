@@ -24,23 +24,27 @@ jobs:
         # curl ${{secrets.SECRET_URL}}
         
         # サマリ出力
-        echo -e "# INPUT INFO:" >> $GITHUB_STEP_SUMMARY
-        echo -e "| Items  | Info |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| :- | :- |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| PROJECT | XXXXX |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| COLLECTION | XXXXX |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| REPOSITORY(BRANCH OR TAG) | XXXXX |" >> $GITHUB_STEP_SUMMARY
+        echo "# Result:" >> $GITHUB_STEP_SUMMARY
+        echo "**JIRA ticket search success.**"
+        echo "| Items  | Info |" >> $GITHUB_STEP_SUMMARY
+        
+        echo "# INPUT INFO:" >> $GITHUB_STEP_SUMMARY
+        echo "| Items  | Info |" >> $GITHUB_STEP_SUMMARY
+        echo "| :- | :- |" >> $GITHUB_STEP_SUMMARY
+        echo "| PROJECT | XXXXX |" >> $GITHUB_STEP_SUMMARY
+        echo "| COLLECTION | XXXXX |" >> $GITHUB_STEP_SUMMARY
+        echo "| REPOSITORY(BRANCH OR TAG) | XXXXX |" >> $GITHUB_STEP_SUMMARY
 
-        echo -e "# JIRA TICKET LIST:" >> $GITHUB_STEP_SUMMARY
-        echo -e "| Tickets  | Log Info |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| :- | :- |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| XXXXX-XXX | Exist |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| XXXXX-XXX | Exist |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| XXXXX-XXX | Not Exist |" >> $GITHUB_STEP_SUMMARY
+        echo "# JIRA TICKET LIST:" >> $GITHUB_STEP_SUMMARY
+        echo "| Tickets  | Log Info |" >> $GITHUB_STEP_SUMMARY
+        echo "| :- | :- |" >> $GITHUB_STEP_SUMMARY
+        echo "| XXXXX-XXX | Exist |" >> $GITHUB_STEP_SUMMARY
+        echo "| XXXXX-XXX | Exist |" >> $GITHUB_STEP_SUMMARY
+        echo "| XXXXX-XXX | Not Exist |" >> $GITHUB_STEP_SUMMARY
 
-        echo -e "# SEARCH RESULT:" >> $GITHUB_STEP_SUMMARY
-        echo -e "| Items  | Count |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| :- | :- |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| LOG EXIST TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
-        echo -e "| LOG NOT EXIST TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
+        echo "# SEARCH RESULT:" >> $GITHUB_STEP_SUMMARY
+        echo "| Items  | Count |" >> $GITHUB_STEP_SUMMARY
+        echo "| :- | :- |" >> $GITHUB_STEP_SUMMARY
+        echo "| TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
+        echo "| LOG EXIST TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
+        echo "| LOG NOT EXIST TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
