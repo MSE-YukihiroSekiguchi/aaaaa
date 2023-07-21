@@ -39,7 +39,7 @@ jobs:
         echo -e "| XXXXX-XXX | Not Exist |" >> $GITHUB_STEP_SUMMARY
 
         echo -e "# SEARCH RESULT:" >> $GITHUB_STEP_SUMMARY
-        echo -e "| Items  | Log Info |" >> $GITHUB_STEP_SUMMARY
+        echo -e "| Items  | Count |" >> $GITHUB_STEP_SUMMARY
         echo -e "| :- | :- |" >> $GITHUB_STEP_SUMMARY
         echo -e "| TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
         echo -e "| LOG EXIST TICKET COUNT | XXX |" >> $GITHUB_STEP_SUMMARY
